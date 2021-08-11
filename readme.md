@@ -27,6 +27,13 @@ Look for structures that match the Hugo partials: *header, footer, main*. Take n
 
 Use lessons to build `single.html`
 
+
+
+### Styling Menu
+
+- Add menu items to config file. Make sure to add `weight` field.
+- Style menu in navigation [section](https://gohugo.io/templates/menu-templates/)
+
 ## Resources
 
 - [Blank Starter Theme](https://themes.gohugo.io/themes/blank/)
