@@ -1,5 +1,35 @@
 {{ define "main" }}
-	<main>
+
+	<!-- Start Header Section -->
+	<div class="page-header">
+		<div class="overlay">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>{{ .Title }}</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Header Section -->
+
+	<!-- Start main Page Section -->
+	<div class="container">
+		<div class="row">
+			
+			<!-- Start main Body Section -->
+			<div class="col-md-12">
+				<div>
+					{{ .Content }}
+				</div>
+			</div>
+			<!-- End main Body Section -->
+		</div>
+	</div>
+	<!-- End main Page Section -->
+
+	<!-- <main>
 		<article>
 			<h1>{{ .Title }}</h1>
 			<time>{{ .Date.Format "02.01.2006 15:04" }}</time>
@@ -21,6 +51,6 @@
 			</div>
 			{{ end }}
 		</article>
-	</main>
-{{ partial "sidebar.html" . }}
+	</main> -->
+<!-- {{ partial "sidebar.html" . }} -->
 {{ end }}

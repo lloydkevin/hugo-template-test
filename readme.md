@@ -25,6 +25,8 @@ It might be better to user a *normal* page for this initial layout. Tip: do a `d
 
 Look for structures that match the Hugo partials: *header, footer, main*. Take note of how *main* differs in the different page templates.
 
+Use lessons to build `single.html`
+
 ## Resources
 
 - [Blank Starter Theme](https://themes.gohugo.io/themes/blank/)
