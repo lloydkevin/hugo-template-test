@@ -1,6 +1,52 @@
 <!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><html lang="en" class="no-js"> <![endif]-->
 <html lang="{{ .Site.LanguageCode | default "en-us" }}">
 <head>
+
+	<!-- Basic -->
+	<title>{{ .Title }}</title>
+
+	<!-- Define Charset -->
+	<meta charset="utf-8">
+
+	<!-- Responsive Metatag -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Page Description and Author -->
+	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+
+	<!-- Bootstrap CSS  -->
+	<link rel="stylesheet" href="{{ "asset/bootstrap/css/bootstrap.min.css" | relURL }}" type="text/css">
+
+	<!-- Font Awesome CSS -->
+	<link rel="stylesheet" href="{{ "asset/font-awesome/css/font-awesome.min.css" | relURL }}" type="text/css">
+
+	<!-- Owl Carousel CSS -->
+	<link rel="stylesheet" href="{{ "asset/css/owl.carousel.css" | relURL }}" type="text/css">
+	<link rel="stylesheet" href="{{ "asset/css/owl.theme.css" | relURL }}" type="text/css">
+	<link rel="stylesheet" href="{{ "asset/css/owl.transitions.css" | relURL }}" type="text/css">
+
+	<!-- Css3 Transitions Styles  -->
+	<link rel="stylesheet" type="text/css" href="{{ "asset/css/animate.css" | relURL }}">
+
+	<!-- Lightbox CSS -->
+	<link rel="stylesheet" type="text/css" href="{{ "asset/css/lightbox.css" | relURL }}">
+
+	<!-- Sulfur CSS Styles  -->
+	<link rel="stylesheet" type="text/css" href="{{ "asset/css/style.css" | relURL }}">
+
+	<!-- Responsive CSS Style -->
+	<link rel="stylesheet" type="text/css" href="{{ "asset/css/responsive.css" | relURL }}">
+
+	{{ with .OutputFormats.Get "RSS" -}}
+		{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
+	{{- end }}
+
+	<script src="{{ "asset/js/modernizrr.js" | relURL }}"></script>
+
+<!-- 	
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,11 +56,28 @@
 	<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
 	{{ with .OutputFormats.Get "RSS" -}}
 		{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
-	{{- end }}
+	{{- end }} -->
+	
 </head>
 <body>
 	{{ partial "header" . }}
 	{{ block "main" . }}{{ end }}
 	{{ partial "footer" . }}
+
+	<!-- Sulfur JS File -->
+	<script src="{{ "asset/js/jquery-2.1.3.min.js" | relURL }}"></script>
+	<script src="{{ "asset/js/jquery-migrate-1.2.1.min.js" | relURL }}"></script>
+	<script src="{{ "asset/bootstrap/js/bootstrap.min.js" | relURL }}"></script>
+	<script src="{{ "asset/js/owl.carousel.min.js" | relURL }}"></script>
+	<script src="{{ "asset/js/jquery.appear.js" | relURL }}"></script>
+	<script src="{{ "asset/js/jquery.fitvids.js" | relURL }}"></script>
+	<script src="{{ "asset/js/jquery.nicescroll.min.js" | relURL }}"></script>
+	<script src="{{ "asset/js/lightbox.min.js" | relURL }}"></script>
+	<script src="{{ "asset/js/count-to.js" | relURL }}"></script>
+	<script src="{{ "asset/js/styleswitcher.js" | relURL }}"></script>
+	
+	<script src="{{ "asset/js/map.js" | relURL }}"></script>
+	<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<script src="{{ "asset/js/script.js" | relURL }}"></script> 
 </body>
 </html>
