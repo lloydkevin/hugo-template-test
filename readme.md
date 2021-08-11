@@ -19,7 +19,11 @@
 
 ### Initial Layout
 
-Edit `baseof.html` to match structure from `index.html`. Everything around `body` tags.
+Edit `baseof.html` to match structure from `index.html` or `about.html`.  Everything around `body` tags.
+
+It might be better to user a *normal* page for this initial layout. Tip: do a `diff` between `index.html` and `page.html` to look for structural differences. This may guide how you structure the initial template.
+
+Look for structures that match the Hugo partials: *header, footer, main*. Take note of how *main* differs in the different page templates.
 
 ## Resources
 
