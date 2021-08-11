@@ -79,7 +79,10 @@
 				<ul class="nav navbar-nav navbar-right">
 					{{ $current := . }}
 					{{ range site.Menus.main }}
+					{{ $menu_item_url := .URL | relURL }}
+    				{{ $page_url:= $current.RelPermalink | relURL }}
 					{{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
+					{{ $active = or $active (eq $menu_item_url $page_url) }}
 					<li>
 						<a class="{{ if $active }}active{{ end }}" href="{{ .URL | relURL }}">{{ .Name }}</a>
 					</li>

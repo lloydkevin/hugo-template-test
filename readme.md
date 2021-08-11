@@ -33,6 +33,7 @@ Use lessons to build `single.html`
 
 - Add menu items to config file. Make sure to add `weight` field.
 - Style menu in navigation [section](https://gohugo.io/templates/menu-templates/)
+  - Note: Had some difficulty getting `IsMenuCurrent` to work as advertised
 
 ## Resources
 
