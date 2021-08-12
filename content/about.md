@@ -9,6 +9,10 @@ menu:
     weight: 20
 
 heading: About Us
+cta: >
+  Awesome Aires Template is ready for<br>
+  Business, Agency, Landing or Creative Portfolio<br>
+  Aires is Responsive and help you to grow your business
 ---
 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.
 
