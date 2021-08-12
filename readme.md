@@ -58,7 +58,11 @@ Use lessons to build `single.html`
 
 ## Forestry Setup
 
-- 
+- Push to github, them import to Forestry
+- ![image-20210812024758099](readme/image-20210812024758099.png)
+- Configure the sidebar to add the `config.yaml`, if it doesn't already exist:
+  - ![image-20210812025128524](readme/image-20210812025128524.png)
+  - Add document for `config.yaml` ![image-20210812025316736](readme/image-20210812025316736.png)
 
 
 
