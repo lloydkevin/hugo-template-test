@@ -35,7 +35,7 @@ fields:
       required: true
       wysiwyg: true
       schema:
-        format: html-blocks
+        format: html
   - type: list
     name: features
     label: features
