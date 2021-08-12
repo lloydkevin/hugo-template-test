@@ -3,6 +3,11 @@ languageCode: "en-us"
 title: "My New Hugo Site"
 theme: "blank"
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
 menu:
   main:
   - identifier: home
