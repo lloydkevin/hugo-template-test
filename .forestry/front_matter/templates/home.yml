@@ -31,6 +31,11 @@ fields:
   - type: textarea
     name: body
     label: body
+    config:
+      required: true
+      wysiwyg: true
+      schema:
+        format: html-blocks
   - type: list
     name: features
     label: features
