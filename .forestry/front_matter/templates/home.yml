@@ -1,0 +1,36 @@
+---
+label: Home
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: heading
+  label: heading
+- type: text
+  name: subheading
+  label: subheading
+- type: field_group
+  name: cta
+  label: cta
+  fields:
+  - type: text
+    name: text
+    label: text
+  - type: text
+    name: link
+    label: link
+- type: field_group
+  name: about
+  label: about
+  fields:
+  - type: textarea
+    name: body
+    label: body
+  - type: list
+    name: features
+    label: features
