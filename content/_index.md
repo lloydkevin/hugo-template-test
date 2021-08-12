@@ -2,6 +2,12 @@
 title: "Home"
 date: 2021-08-11T11:25:16-05:00
 draft: true
+
+menu:
+  main:
+    name: Home
+    weight: 10
+
 heading: "Welcome To The <span>Great Sulfur</span>"
 subheading: "Generate a flood of new business with the <br> power of a digital media platform"
 cta:
