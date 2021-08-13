@@ -1,12 +1,9 @@
 ---
-title: "Contact"
-date: 2021-08-11T11:27:00-05:00
-draft: false
-
+title: Contact
+date: 2021-08-11T11:27:00.000-05:00
 menu:
   main:
-    name: Contact
-    weight: 50
----
+    weight: 5
 
+---
 Contact Page

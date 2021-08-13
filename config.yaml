@@ -1,8 +1,8 @@
-baseURL: "https://kl-hugo-test.netlify.app/"
-languageCode: "en-us"
-title: "My New Hugo Site"
-theme: "blank"
-
+---
+baseURL: https://kl-hugo-test.netlify.app/
+languageCode: en-us
+title: My New Hugo Site
+theme: blank
 markup:
   goldmark:
     renderer:

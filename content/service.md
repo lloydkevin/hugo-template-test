@@ -1,12 +1,9 @@
 ---
-title: "Service"
-date: 2021-08-11T11:27:30-05:00
-draft: false
-
+title: Service
+date: 2021-08-11T11:27:30.000-05:00
 menu:
   main:
-    name: Service
-    weight: 30
----
+    weight: 3
 
+---
 Service Page
